@@ -67,7 +67,7 @@ class Simpler_GitHub_Widget extends WP_Widget {
 
         // the list of repos
         echo '<ul id="gh-repos">';
-        echo '<li id="gh-loading">' . __('Status updating...','simpler-github-widget') . '</li>';
+        echo '<li id="gh-loading"><img width="128px" alt="GitHub Octocat" src="' . plugins_url('ajax-loader.gif', __FILE__) . '" /> ' . __('Status updating...','simpler-github-widget') . '</li>';
         echo '</ul>';
         echo '<script src="' . plugins_url('github.js', __FILE__) . '" type="text/javascript"> </script>';
 ?>
